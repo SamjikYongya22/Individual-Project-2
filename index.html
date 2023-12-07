@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Interactive Learning Platform</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300;1,400&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <header>
+      <h1>INTERACTIVE ACADAMY</h1>
+    </header>
+
+    <nav>
+      <ul>
+        <li><a href="#main-section">Home</a></li>
+        <li><a href="#cta-section">Get Started</a></li>
+        <li><a href="#math-courses-section">Math Courses</a></li>
+        <li><a href="#signup-section">Sign Up</a></li>
+      </ul>
+    </nav>
+    <section id="main-section" class="main-section">
+      <h2>Welcome to our Interactive Learning Acadamy</h2>
+      <p>
+        Discover a new way to learn and enhance your skills through interactive
+        lessons, quizzes, and engaging activities. Our platform provides a
+        variety of courses to cater to different interests and levels of
+        expertise.
+      </p>
+
+      <ul>
+        <p>Why choose us?</p>
+        <li>Interactive and engaging content</li>
+        <li>Expert instructors</li>
+        <li>Flexible learning schedules</li>
+        <li>Community support</li>
+      </ul>
+
+      <a href="#cta-section" class="cta-button">Get Started</a>
+    </section>
+
+    <section id="cta-section" class="cta-section">
+      <h2>Are You Ready to Start Learning?</h2>
+      <p>
+        Join our platform now and embark on a journey of knowledge and
+        discovery.
+      </p>
+      <a href="#signup-section" class="cta-button">Sign Up</a>
+    </section>
+
+    <section id="math-courses-section" class="course-section">
+        <h2>Math Courses</h2>
+        <label for="searchLevel">Search by Level:</label>
+        <select id="searchLevel" name="searchLevel">
+          <option value="all">All Levels</option>
+          <option value="elemetry">Elemetry</option>
+          <option value="middleSchool">Middle School</option>
+          <option value="highSchool">High School</option>
+        </select>
+        <button class="search-button" onclick="searchCourses()">Search</button>
+  
+        <div id="courseList" class="course-list"></div>
+      </section>
+
+    <section id="math-courses" class="course-section">
+      <h2>Featured Math Courses</h2>
+
+      <div class="course">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/NybHckSEQBI"
+          title="Algebra Basics: What Is Algebra? - Math Antics"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <div class="course">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/k_MzQjLA9fA"
+          title="Trigonometry Basics"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <div class="course">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/8Ggib9i5wRo"
+          title="Trigonometry Beginners Complete Guide"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <div class="course">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/ov10JnyN8Mo"
+          title="Algebraic Equations for Middle School : Math Skills"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <div class="course">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/HAbxLCQXZ3U"
+          title="High School Algebra"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+
+      <div class="course">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/yBw67Fb31Cs"
+          title="Trigonometry fundamentals | Ep. 2 Lockdown live math"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+
+
+
+    <section id="signup-section" class="signup-section">
+        <h2>Sign Up for Free!</h2>
+        <p>
+          Don't miss out on the opportunity to explore our courses. Sign up now
+          and unlock a world of knowledge in Maths.
+        </p>
+        <form action="#" method="post">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <br />
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required />
+          <br />
+          <input type="submit" value="Sign Up" class="cta-button" />
+        </form>
+      </section>
+
+   
+    <footer>
+        <div class="footer-content">
+            <div class="contact-info">
+                <h3>Contact Information</h3>
+                <p>Email: interactiveacadamy@gmail.com</p>
+                <p>Phone: +82 (010) 4456-7890</p>
+            </div>
+            <div class="address">
+                <h3>Address</h3>
+                <p>57, Deahak-ro</p>
+                <p>Mugudong, Ulsan, South Korea</p>
+                <p>ZIP Code: 12345</p>
+            </div>
+            <div class="social-media">
+                <h3>Connect With Us</h3>
+                <a href="#" target="_blank" rel="facebook account">Facebook</a>
+                <a href="#" target="_blank" rel="twitter account">Twitter</a>
+                <a href="#" target="_blank" rel="linkedin account">LinkedIn</a>
+                <a href="#" target="_blank" rel="intagram account">Instagram</a>
+            </div>
+        </div>
+        <div class="copyright">
+
+            <p>
+                &copy; 2023 Interactive Learning Platform. All rights reserved. |
+                Privacy Policy| Terms of Services
+            </p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

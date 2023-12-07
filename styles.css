@@ -1,0 +1,291 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+}
+
+header {
+    background-color: #152642;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+nav {
+    background-color: #152642;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2em;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffcc00;
+}
+
+.main-section,
+.signup-section,
+.cta-section,
+.course-section {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 2em;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.main-section h2{
+    line-height: 4em;
+    text-align: center;
+
+
+}
+.signup-section{
+    margin-bottom: 6em;
+}
+select {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+h2 {
+    color: #333;
+}
+
+p {
+    color: #555;
+    line-height: 1.6;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+
+}
+ul p{
+    line-height: 4em;
+    font-weight: bold;
+}
+
+
+.cta-button {
+    display: block;
+    width: 150px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    background-color: #4285f4;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+   
+}
+
+.cta-button:hover {
+    background-color: #0d47a1;
+
+}
+.search-button {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+#email,
+#password {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+label {
+    display: block;
+    
+    text-align: center;
+}
+
+.course-section h2 {
+    text-align: center;
+    line-height: 3em ;
+}
+
+.course {
+    margin-top: 20px;
+    text-align: center;
+}
+
+
+
+
+.course iframe {
+    margin-top: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.course iframe:hover {
+    transform: scale(1.1);
+}
+
+.course-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.course {
+    margin: 20px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.course:hover {
+    transform: scale(1.05);
+}
+
+.course h3 {
+    color: #333;
+}
+
+.course img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.course img:hover {
+    transform: scale(1.1);
+}
+
+.course iframe {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.course iframe:hover {
+    transform: scale(1.1);
+}
+
+footer {
+    background-color: #152642;
+    color: #fff;
+    text-align: center;
+    padding: 2em 0;
+}
+footer p {
+    color: #fff;
+}
+
+.footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.contact-info,
+.address,
+.social-media {
+    flex: 1;
+    max-width: 300px;
+    margin: 0 20px;
+}
+
+.contact-info h3,
+.address h3,
+.social-media h3 {
+    color: #fff;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 10px;
+}
+
+.contact-info p,
+.address p {
+    color: #fff;
+    margin: 5px 0;
+}
+
+.social-media a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    margin: 5px 0;
+    transition: color 0.3s ease;
+}
+
+.social-media a:hover {
+    color: #0077b5;
+}
+
+.copyright {
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+    
+    nav li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .main-section, .cta-section, .course-section, .signup-section {
+        padding: 1em;
+    }
+
+    .course-list {
+        grid-template-columns: 1fr;
+    }
+    iframe {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 768px) {
+    
+    nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
+
+
